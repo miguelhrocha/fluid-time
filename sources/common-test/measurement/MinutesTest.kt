@@ -9,12 +9,12 @@ object MinutesTest {
 
 	@Test
 	fun testArithmethic() {
-		// FIXME add YouTrack link
 		assertEquals(Minutes(1), Minutes(-1).absolute)
 		assertEquals(Minutes(0), Minutes(0).absolute)
 		assertEquals(Minutes(1), Minutes(1).absolute)
 
-//		assertEquals(Minutes(5), Minutes(10) / 2)
+		// https://youtrack.jetbrains.com/issue/KT-31431
+		assertEquals(Minutes(5), Minutes(10) / 2)
 //		assertEquals(Minutes(5), Minutes(10L) / 2)
 		assertEquals(5, Minutes(10) / Minutes(2))
 
@@ -22,10 +22,12 @@ object MinutesTest {
 
 		assertEquals(Minutes(18), Minutes(10) + Minutes(8))
 
+		// https://youtrack.jetbrains.com/issue/KT-31431
 //		assertEquals(Minutes(1), Minutes(10) % 3)
 //		assertEquals(Minutes(1), Minutes(10) % 3L)
 //		assertEquals(Minutes(1), Minutes(10) % Minutes(3))
 
+		// https://youtrack.jetbrains.com/issue/KT-31431
 //		assertEquals(Minutes(20), Minutes(10) * 2)
 //		assertEquals(Minutes(20), Minutes(10) * 2L)
 
@@ -65,7 +67,7 @@ object MinutesTest {
 	@Test
 	@UseExperimental(ExperimentalTime::class)
 	fun testConversion() {
-		// FIXME add YouTrack link
+		// https://youtrack.jetbrains.com/issue/KT-31431
 //		assertEquals(Days(1), Minutes(1_440).toDays())
 //		assertEquals(10.minutes, Minutes(10).toDuration())
 //		assertEquals(Hours(1L), Minutes(60).toHours())
@@ -100,7 +102,7 @@ object MinutesTest {
 
 	@Test
 	fun testMap() {
-		// FIXME add YouTrack link
+		// https://youtrack.jetbrains.com/issue/KT-31431
 //		assertEquals(Minutes(20), Minutes(10).map { it * 2 })
 	}
 }
